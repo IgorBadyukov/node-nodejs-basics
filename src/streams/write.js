@@ -10,7 +10,7 @@ const fileWay = path.join(__dirname, 'files/fileToWrite.txt')
 
 const write = async () => {
     const ws = fs.createWriteStream(fileWay, 'utf-8');
-    input.pipe(transform).pipe(output);
+    input.pipe(ws);
 };
 
 await write();
