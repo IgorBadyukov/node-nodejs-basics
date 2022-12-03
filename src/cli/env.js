@@ -5,7 +5,7 @@ const parseEnv = () => {
     const keysEnviroment = Object.keys(enviroment);
     keysEnviroment.forEach((key) => {
         if (key.toString().includes('RSS_')) {
-            console.log(`${key}=${envVar[key]}`);
+            console.log(`${key}=${enviroment[key]}`);
         }
     })
 };
